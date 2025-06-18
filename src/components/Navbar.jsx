@@ -43,7 +43,7 @@ const Navbar = () => {
           >
             <div className="w-50 h-30 bg-gradient-to-r white to-yellow-600 rounded-full flex items-center justify-center">
             <img 
-              src="img/logo.png" // Ruta de la imagen de tu logo
+              src="/img/logo.png" // Ruta de la imagen de tu logo
               alt="Logo" 
               className="w- h-10 object-cover" // Ajusta el tamaño de la imagen y asegúrate de que cubra el contenedor
             />
