@@ -39,7 +39,7 @@ const Hero = () => {
         <img  
           className="w-full h-full object-cover opacity-30" 
           alt="Niños jugando fútbol en el campo"
-         src="logo.png" />
+         src="/img/logo.png" />
       </div>
 
       {/* Content */}
