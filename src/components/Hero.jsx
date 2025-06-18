@@ -37,7 +37,7 @@ const Hero = () => {
       {/* Hero Image */}
       <div className="absolute inset-0 z-0">
         
-          <img src={p.img} alt={p.title} className="w-full h-40 object-cover"></img>
+           <img src={p.img} alt={p.title} className="w-full h-40 object-cover" />
       </div>
 
       {/* Content */}
