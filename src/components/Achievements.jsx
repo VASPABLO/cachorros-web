@@ -175,7 +175,7 @@ const Achievements = () => {
                 <img  
                   className="w-16 h-16 rounded-full object-cover mr-4" 
                   alt="Jugadora profesional egresada"
-                 src="src/img/jugador2.png" />
+                 src="img/jugador2.png" />
                 <div>
                   <h4 className="text-xl font-bold text-white">Carlos Ramirez Ramírez</h4>
                   <p className="text-yellow-400">Selección Nacional Sub-20</p>
