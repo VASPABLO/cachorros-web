@@ -80,7 +80,7 @@ const Coaches = () => {
                         <img  
                           className="w-full h-full object-cover" 
                           alt={`Entrenador ${coaches[currentIndex].name}`}
-                         src="src/img/entrenador.png" />
+                         src="img/entrenador.png" />
                       </div>
                       <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center">
                         <Star className="w-8 h-8 text-black fill-current" />

@@ -53,7 +53,7 @@ const AboutUs = () => {
               <img  
                 className="w-full h-96 object-cover transform hover:scale-105 transition-transform duration-500" 
                 alt="Equipo de fútbol Cachorros celebrando"
-               src="src/imgimg/quinta.jpg" />
+               src="img/quinta.jpg" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             </div>
           </motion.div>

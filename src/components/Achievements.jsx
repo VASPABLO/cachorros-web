@@ -158,7 +158,7 @@ const Achievements = () => {
                 <img  
                   className="w-16 h-16 rounded-full object-cover mr-4" 
                   alt="Jugador profesional egresado"
-                 src="src/img/jugador1.png" />
+                 src="img/jugador1.png" />
                 <div>
                   <h4 className="text-xl font-bold text-white">Miguel Ángel Torres</h4>
                   <p className="text-yellow-400">Jugador Profesional - Liga Nacional</p>
