@@ -35,11 +35,11 @@ const Hero = () => {
       </div>
 
       {/* Hero Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 flex items-center justify-center">
         <img  
-          className="w-full h-full object-cover opacity-30" 
-          alt="Niños jugando fútbol en el campo"
-         src="/img/logo.png" />
+          className="w-auto h-[60vh] md:h-[70vh] object-contain opacity-50" 
+          alt="escudo"
+         src="/img/hero.png" />
       </div>
 
       {/* Content */}

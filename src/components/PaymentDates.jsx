@@ -64,7 +64,7 @@ const PaymentDates = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-black notion-heading gradient-text mb-6">
+          <h2 className="text-5xl md:text-6xl font-black notion-heading text-yellow-400 mb-6">
             FECHAS DE PAGO
           </h2>
         

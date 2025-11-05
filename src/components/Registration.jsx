@@ -90,10 +90,10 @@ const Registration = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-black notion-heading gradient-text mb-6">
+          <h2 className="text-5xl md:text-6xl font-black notion-heading text-yellow-400 mb-6">
             INSCRIPCIÓN
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-white max-w-3xl mx-auto">
             ¡Únete a la familia Cachorros! Completa el formulario y comienza tu aventura futbolística
           </p>
         </motion.div>

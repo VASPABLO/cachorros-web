@@ -43,15 +43,11 @@ const MissionVision = () => {
               
               <div className="space-y-6">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Formar integralmente a niños y jóvenes a través del fútbol, desarrollando 
-                  sus habilidades técnicas, tácticas y físicas, mientras inculcamos valores 
-                  fundamentales como el respeto, la disciplina, el trabajo en equipo y la perseverancia.
-                </p>
-                
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  Buscamos crear un ambiente seguro y divertido donde cada cachorro pueda 
-                  crecer como deportista y como persona, preparándolos para los desafíos 
-                  tanto dentro como fuera del campo.
+                  Crear espacios deportivos para los niños y jóvenes del cantón de Buenos Aires 
+                  mediante el aprovechamiento de actividades futbolísticas que brinden a los niños 
+                  y jóvenes formación y actitud deportiva, así como planificar actividades 
+                  internas y externas en el bienestar físico y hábitos saludables en el desarrollo 
+                  de la comunidad, desde torneos, eventos y vinculación con el medio.
                 </p>
 
                 <div className="bg-black/30 p-4 rounded-lg border-l-4 border-yellow-400">
@@ -82,17 +78,44 @@ const MissionVision = () => {
               </div>
               
               <div className="space-y-6">
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  Ser reconocidos como la escuela de fútbol líder en la región, destacando 
-                  por la excelencia en la formación deportiva y humana de nuestros estudiantes, 
-                  contribuyendo al desarrollo del fútbol local y nacional.
-                </p>
-                
-                <p className="text-lg text-gray-300 leading-relaxed">
-                  Aspiramos a que nuestros cachorros se conviertan en referentes del deporte, 
-                  no solo por sus habilidades futbolísticas, sino por su carácter, liderazgo 
-                  y compromiso con la sociedad.
-                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <span className="text-yellow-400 font-bold mr-3 mt-1">1.</span>
+                    <p className="text-gray-300 leading-relaxed">
+                      Conformar categorías de liga menor según la programación del ente nacional 
+                      que rige el fútbol de Liga Menor a nivel país.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start">
+                    <span className="text-yellow-400 font-bold mr-3 mt-1">2.</span>
+                    <p className="text-gray-300 leading-relaxed">
+                      Representar al Cantón en actividades futbolísticas.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start">
+                    <span className="text-yellow-400 font-bold mr-3 mt-1">3.</span>
+                    <p className="text-gray-300 leading-relaxed">
+                      Incentivar en los niños y jóvenes la participación en el deporte.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start">
+                    <span className="text-yellow-400 font-bold mr-3 mt-1">4.</span>
+                    <p className="text-gray-300 leading-relaxed">
+                      Mejorar la salud y el bienestar de los niños y jóvenes.
+                    </p>
+                  </div>
+
+                  <div className="flex items-start">
+                    <span className="text-yellow-400 font-bold mr-3 mt-1">5.</span>
+                    <p className="text-gray-300 leading-relaxed">
+                      Promover actividades extra deportivas que generen unión y sentido de 
+                      pertenencia en los niños y jóvenes.
+                    </p>
+                  </div>
+                </div>
 
                 <div className="bg-black/30 p-4 rounded-lg border-l-4 border-yellow-400">
                   <p className="text-yellow-400 font-semibold italic">

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,13 +18,12 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: 'Inicio', href: '#inicio' },
-    { name: 'Sobre Nosotros', href: '#sobre-nosotros' },
-    { name: 'Misión y Visión', href: '#mision-vision' },
-    { name: 'Categorías', href: '#categorias' },
-    { name: 'Entrenadores', href: '#entrenadores' },
-    { name: 'Logros', href: '#logros' },
-    { name: 'Inscripción', href: '#inscripcion' }
+    { name: 'Inicio', href: '/' },
+    { name: 'Misión y Visión', href: '/mision' },
+    { name: 'Categorías', href: '/categorias' },
+    { name: 'Entrenadores', href: '/entrenadores' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Inscripción', href: '/inscripcion' }
   ];
 
   return (
@@ -54,17 +54,17 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
-              <motion.a
+              <motion.div
                 key={item.name}
-                href={item.href}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="text-white hover:text-yellow-400 transition-colors duration-300 font-medium"
                 whileHover={{ scale: 1.05 }}
               >
-                {item.name}
-              </motion.a>
+                <Link to={item.href} className="text-white hover:text-yellow-400 transition-colors duration-300 font-medium">
+                  {item.name}
+                </Link>
+              </motion.div>
             ))}
           </div>
 
@@ -90,17 +90,20 @@ const Navbar = () => {
             className="md:hidden bg-black/90 backdrop-blur-lg rounded-lg mt-2 p-4"
           >
             {navItems.map((item, index) => (
-              <motion.a
+              <motion.div
                 key={item.name}
-                href={item.href}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="block py-2 text-white hover:text-yellow-400 transition-colors duration-300"
-                onClick={() => setIsOpen(false)}
               >
-                {item.name}
-              </motion.a>
+                <Link
+                  to={item.href}
+                  className="block py-2 text-white hover:text-yellow-400 transition-colors duration-300"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              </motion.div>
             ))}
           </motion.div>
         )}

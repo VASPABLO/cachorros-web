@@ -1,37 +1,49 @@
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { Toaster } from '@/components/ui/toaster';
+import SplashScreen from '@/components/SplashScreen';
 import Navbar from '@/components/Navbar';
-import Hero from '@/components/Hero';
-import AboutUs from '@/components/AboutUs';
-import MissionVision from '@/components/MissionVision';
-import Categories from '@/components/Categories';
-import Coaches from '@/components/Coaches';
-import Achievements from '@/components/Achievements';
-import Registration from '@/components/Registration';
-import PaymentDates from '@/components/PaymentDates';
-import WhatsAppButton from '@/components/WhatsAppButton';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
+
+// Pages
+import Home from '@/pages/Home';
+import Categorias from '@/pages/Categorias';
+import Entrenadores from '@/pages/Entrenadores';
+import MisionVision from '@/pages/MisionVision';
+import Blog from '@/pages/Blog';
+import Inscripcion from '@/pages/Inscripcion';
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true);
+
   return (
-    <div className="min-h-screen bg-black text-white scroll-smooth">
-      <Navbar />
-      <main>
-        <Hero />
-        <AboutUs />
-        <MissionVision />
-        <Categories />
-        <Coaches />
-        <Achievements />
-        <Registration />
-        <PaymentDates />
-      </main>
-      <Footer />
-      <WhatsAppButton />
-      <Toaster />
-    </div>
+    <HelmetProvider>
+      <BrowserRouter>
+      {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
+
+      <div className="min-h-screen bg-black text-white scroll-smooth">
+        <Navbar />
+
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/mision" element={<MisionVision />} />
+            <Route path="/categorias" element={<Categorias />} />
+            <Route path="/entrenadores" element={<Entrenadores />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/inscripcion" element={<Inscripcion />} />
+          </Routes>
+        </main>
+
+        <Footer />
+        <WhatsAppButton />
+        <Toaster />
+      </div>
+    </BrowserRouter>
+    </HelmetProvider>
   );
 }
 
