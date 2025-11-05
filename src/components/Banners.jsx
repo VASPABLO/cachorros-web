@@ -24,9 +24,8 @@ export default function Banners() {
     const cargarBanners = () => {
         // Aquí puedes poner las rutas relativas de las imágenes locales
         const localImages = [
-            '/img/entrenador.png',  // Ruta local
-            '/img/equipo1.png',  // Ruta local
-            '/img/galeria5.png',  // Ruta local
+            '/img/Banner2.png',  // Ruta local
+            '/img/Banner3.png',  // Ruta local
             // Más imágenes locales...
         ];
 
